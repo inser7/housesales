@@ -1,0 +1,19 @@
+body {
+    background: url('../img/stripe.png');
+}
+
+h1 {
+    text-align: center;
+}
+
+.adv {
+    border: 1px solid gray;
+    border-top: none;
+    box-shadow: 0px 0px 4px;
+    background: white;
+}
+
+.tears div {
+    height: 50px;
+    border-right: 1px gray solid;
+}
