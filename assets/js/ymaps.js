@@ -23,6 +23,11 @@ var nearObjects = [
         "label": "Школа №2"
     },
     {
+        "location": "Петрозаводск, ул. Лыжная, 22А",
+        "icon": 'twirl#blueStretchyIcon',
+        "label": "Почта"
+    },
+    {
         "location": "Петрозаводск, ул. Ровио, 14",
         "icon": 'twirl#blueStretchyIcon',
         "label": "Поликлиника"
