@@ -21,8 +21,30 @@ h1 {
 
 #map {
     border: 1px gray solid;
+    width: 600px; 
+    height: 400px;
 }
 
 #pro-cons ul {
     list-style-type: none;
+}
+
+#plan{
+    width: 600px;
+    height: 461px;
+    background: url(../img/plan_static.png);
+}
+
+#plan img {
+    display: none;
+}
+
+.svg #plan {
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+.svg #plan img {
+    display: inline;
 }
