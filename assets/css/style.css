@@ -1,5 +1,6 @@
 body {
     background: url('../img/stripe.png');
+    font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
@@ -16,4 +17,12 @@ h1 {
 .tears div {
     height: 50px;
     border-right: 1px gray solid;
+}
+
+#map {
+    border: 1px gray solid;
+}
+
+#pro-cons ul {
+    list-style-type: none;
 }
