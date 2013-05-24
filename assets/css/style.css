@@ -70,6 +70,11 @@ h1, h2 {
 }
 
 #tears {
+    display: none;
+}
+
+html>body #tears {
+    display: block;
     margin-bottom: 3em;
 }
 
