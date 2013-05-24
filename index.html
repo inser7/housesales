@@ -6,6 +6,7 @@
           content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <!-- Bootstrap -->
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
           rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -43,8 +44,8 @@
                 <table class="table table-hover">
                   <tbody>
                   <tr>
-                    <td><strong>Адрес</strong></td>
-                    <td><i class="icon-envelope"></i></td>
+                    <td style="width: 30%;"><strong>Адрес</strong></td>
+                    <td style="width: 30px;"><i class="icon-envelope"></i></td>
                     <td>г. Петрозаводск, ул. Ровио, д. 8</td>
                   </tr>
                   <tr>
@@ -75,9 +76,9 @@
                 <table class="table table-hover">
                   <tbody>
                   <tr>
-                    <td><strong>Год постройки</strong></td>
-                    <td><i class="icon-wrench"></i></td>
-                    <td>1968 г.</td>
+                    <td style="width: 30%;"><strong>Год постройки</strong></td>
+                    <td style="width: 30px;"><i class="icon-wrench"></i></td>
+                    <td>1978 г.</td>
                   </tr>
                   <tr>
                     <td><strong>Санузел</strong></td>
@@ -90,7 +91,7 @@
                     <td>электрическая</td>
                   </tr>
                   <tr>
-                    <td><strong>Высота потолков</strong></td>
+                    <td><strong>Потолки</strong></td>
                     <td><i class="icon-resize-vertical"></i></td>
                     <td>2,5 м</td>
                   </tr>
@@ -102,22 +103,6 @@
                   </tbody>
                 </table>
                 </div>
-
-                
-                <!-- <p class="span6"> -->
-                <!--   <strong>Адрес:</strong> г. Петрозаводск, ул. Ровио, д. 8.<br/> -->
-                <!--   <strong>Площадь:</strong> 48,8 м².<br/> -->
-                <!--   <strong>Этаж:</strong> 4/5.<br/> -->
-                <!--   <strong>Тип дома:</strong> панельный.<br/> -->
-                <!--   <strong>Планировка:</strong> «брежневка», «распашонка».<br/> -->
-                <!-- </p> -->
-                <!-- <p class="span4 lead text-right"> -->
-                <!--   <strong>Год постройки:</strong> 1968 г.<br/> -->
-                <!--   <strong>Санузел:</strong> раздельный.<br/> -->
-                <!--   <strong>Плита:</strong> электрическая.<br/> -->
-                <!--   <strong>Цена:</strong> 2&thinsp;650&thinsp;000 рублей. -->
-                <!-- </p> -->
-
               </div>
 
             </div>
@@ -126,14 +111,47 @@
           <div class="row" id="layout">
             <div class="span10 offset1">
               <h2>Планировка</h2>
-              
+              <div class="row">
+                <div  class="span7">
+                  <div id="plan">
+                    <img src="assets/img/plan.svg" width="100%"/>
+                  </div>
+                </div>
+                  <div class="span2 offset1">
+                    <p><strong>Список помещений:</strong></p>
+                    <ol>
+                      <li>Балкон</li>
+                      <li>Спальня</li>
+                      <li>Гостиная</li>
+                      <li>Кухня</li>
+                      <li>Детская</li>
+                      <li>Ванна</li>
+                      <li>Туалет</li>
+                      <li>Прихожая</li>
+                      <li>Кладовка</li>
+                    </ol>
+                  </div>
+              </div>
             </div>
           </div>
 
           <div class="row" id="situation">
             <div class="span10 offset1">
               <h2>Расположение</h2>
-              <div style="width: 600px; height: 400px;" id="map"></div>
+              <div class="row">
+                <div  class="span6">
+                  <div id="map" style="width: 100%;"></div>
+                </div>
+                <div  class="span4">
+                  <p>
+                    Во дворе дома расположен детский сад и магазин, недалеко
+                    школа, поликлиника и отделение сбербанка. До центра 15
+                    минут на общественном транспорте или 40 минут
+                    пешком. Остановки общественного транспорта рядом с домом.
+                  </p>
+                </div>
+
+              </div>
             </div>
           </div>
 
@@ -152,25 +170,28 @@
 
           <div class="row" id="contacts">
             <div class="span10 offset1">
-              <h2>Адреса и телефоны</h2>
-              
+              <h2>Телефоны</h2>
+              <p>
+                Квартира обычно доступна для осмотра по будням после
+                19:00. Предупредите нас о желании посетить квартиру за сутки:
+              </p>
               <div class="row">
                 <div class="offset1 span3">
                   <address>
                     <strong>Александр</strong><br>
-                    Телефон: <em>+7 (921) 467-83-57</em><br>
+                    Телефон: <em>+7&nbsp;(921)&nbsp;467-83-57</em><br>
                   </address>
                 </div>
                 <div class="span3">
                   <address>
                     <strong>Евгения</strong><br>
-                    Телефон: <em>+7 (905) 209-93-52</em><br>                    
+                    Телефон: <em>+7&nbsp;(905)&nbsp;209-93-52</em><br>                    
                   </address>                    
                 </div>
                 <div class="span3">
                   <address>
                     <strong>Александра</strong><br>
-                    Телефон: <em>+7 (911) 438-66-54</em><br>                    
+                    Телефон: <em>+7&nbsp;(911)&nbsp;438-66-54</em><br>                    
                   </address>                    
                 </div>
               </div>
@@ -178,15 +199,34 @@
           </div>
 
         </div>
-      <!-- <div class="row tears"> -->
-      <!--   <div class="span1"> -->
-      <!--   </div> -->
-      <!--   <div class="span1"> -->
-      <!--   </div> -->
-      <!--   <div class="span1"> -->
-      <!--   </div> -->
-      <!-- </div> -->
       </div>
+
+      <div class="row hidden-phone hidden-tablet" id="tears">
+        <div class="span1 offset2 tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+        <div class="span1  tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+        <div class="span1 offset1 tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+        <div class="span1  tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+        <div class="span1  tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+        <div class="span1  offset1 tear">
+          <p>+7&nbsp;(921)&nbsp;467-83-57</p>
+        </div>
+      </div>
+
+      <!-- Creative commons license -->
+      <p class="text-right">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.ru"><img alt="Лицензия Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br />Это произведение, автор которого — <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/askolosov/rovio8-flat" property="cc:attributionName" rel="cc:attributionURL">Александр Колосов</a>, доступно на условиях <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.ru">лицензии Creative Commons «Attribution-ShareAlike» («Атрибуция — На тех же условиях») 3.0 Непортированная</a>.
+      </p>
+
     </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>
