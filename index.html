@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head lang="ru">
-    <title>Продам квартиру: г. Петрозаводск, ул. Ровио, д. 8</title>
+    <title>Продается трехкомнатная квартира: г. Петрозаводск, ул. Ровио, д. 8</title>
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
-    <!-- Bootstrap -->
+
     <script src="assets/js/modernizr.js" type="text/javascript"></script>
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
           rel="stylesheet" media="screen">
+    <!-- VK sharing button -->
+    <script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?11" charset="windows-1251"></script>
+
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+
+    <!-- For Facebook button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="container">
       
       <!-- Navigation -->
       <!-- <div class="navbar" data-spy="affix"> -->
-      <!--   <div class="navbar-inner"> -->
-      <!--     <ul class="nav"> -->
-      <!--       <li class="active"><a href="#layout">Планировка</a></li> -->
-      <!--       <li><a href="#situation">Расположение</a></li> -->
-      <!--       <li><a href="#">Особенности</a></li> -->
-      <!--     </ul> -->
-      <!--   </div> -->
-      <!-- </div> -->
+      <!--   <div class="navbar-inner">  -->
+      <!--     <ul class="nav">  -->
+      <!--       <li><a href="#layout">Планировка</a></li>  -->
+      <!--       <li><a href="#situation">Расположение</a></li>  -->
+      <!--       <li><a href="#pros-and-cons">Преимущества и -->
+      <!--           недостатки</a></li>  -->
+      <!--       <li><a href="#contacts">Телефоны</a></li>  -->
+      <!--     </ul>  -->
+      <!--   </div>  -->
+      <!-- </div>  -->
 
       <div class="row">
         <div class="span12 adv">
-          <div class="row">
+            <table id="sharing">
+              <tr>
+                <td class="vk">
+                  <!-- vk -->
+                  <script type="text/javascript">
+                    <!--
+                    document.write(VK.Share.button(false,{type: "round_nocount", text: "Сохранить"}));
+                    -->
+                  </script>
+                </td>
+                <td class="fb">
+                  <!-- facebook -->
+                  <div class="fb-like" data-href="http://rovio8-flat.info"
+                       data-send="false" data-width="450" data-show-faces="false"
+                       data-font="arial" data-action="recommend"></div>
+                </td>
+                <td class="tw">
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/share"
+                     class="twitter-share-button" data-count="none"
+                     data-lang="ru">Tweet</a>
+                </td>
+                <td class="gp">
+                  <!-- Google+ -->
+                  <div class="g-plus" data-action="share"
+                       data-annotation="none"></div>
+                  <script type="text/javascript">
+                    window.___gcfg = {lang: 'ru'};
+                    
+                    (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                  </script>
+                </td>
+              </tr>
+            </table>
+            
+          <div class="row" id="intro">
             <div class="span10 offset1">
               <h1>Продам трехкомнатную квартиру</h1>
               <!-- <p class="lead"> -->
@@ -100,6 +155,11 @@
                     <td><i class="icon-gift"></i></td>
                     <td>2&thinsp;650&thinsp;000 рублей</td>
                   </tr>
+                  <!-- <tr> -->
+                  <!--   <td><strong>Телефон</strong></td> -->
+                  <!--   <td><i class="icon-"></i></td> -->
+                  <!--   <td>+7 (921) 467-83-57</td> -->
+                  <!-- </tr> -->
                   </tbody>
                 </table>
                 </div>
@@ -117,20 +177,39 @@
                     <img src="assets/img/plan.svg" width="100%"/>
                   </div>
                 </div>
-                  <div class="span2 offset1">
-                    <p><strong>Список помещений:</strong></p>
-                    <ol>
-                      <li>Балкон</li>
-                      <li>Спальня</li>
-                      <li>Гостиная</li>
-                      <li>Кухня</li>
-                      <li>Детская</li>
-                      <li>Ванна</li>
-                      <li>Туалет</li>
-                      <li>Прихожая</li>
-                      <li>Кладовка</li>
-                    </ol>
+                <div class="span2 offset1">
+                  <p><strong>Список помещений:</strong></p>
+                  <ol id="roomsList">
+                    <li>Балкон</li>
+                    <li><a href="#bedroomView" data-toggle="modal">Спальня</a>&nbsp;&nbsp;<i class="icon-eye-open"></i></li>
+                    <li>Гостиная</li>
+                    <li>Кухня</li>
+                    <li>Детская</li>
+                    <li>Ванна</li>
+                    <li>Туалет</li>
+                    <li>Прихожая</li>
+                    <li>Кладовка</li>
+                  </ol>
+                </div>
+                <div id="bedroomView" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                   </div>
+                  <div class="modal-body">
+
+                    <!-- fullsize="4096,2048" -->        
+                    <g:panoembed imageurl="https://lh3.googleusercontent.com/-zqhfYgiaa0Y/UaCGB6wvuaI/AAAAAAAABHI/RVbk9EngfYI/d/bedroom.jpg"
+                                 fullsize="5427,2848"
+                                 croppedsize="5427,1400"
+                                 offset="0,700"
+                                 displaysize="600,400"></g:panoembed>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Зыкрыть</button>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -155,7 +234,7 @@
             </div>
           </div>
 
-          <div class="row" id="pro-cons">
+          <div class="row" id="pros-and-cons">
             <div class="span10 offset1">
               <h2>Преимущества и недостатки</h2>
               <ul>
@@ -238,6 +317,7 @@
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <script src="assets/js/ymaps.js" type="text/javascript"></script>
 
+    <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-41204672-1']);
@@ -249,6 +329,16 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+
+    <!-- Google panorama script -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <script>
+      gapi.panoembed.go();
+    </script>
+
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   </body>
 </html>
 
