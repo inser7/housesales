@@ -115,12 +115,11 @@ h1, h2 {
     margin-right: 1em;
     float: right;
     vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 5px;
 }
 
 #intro {
     padding-top: 3em;
 }
 
-#sharing .tw {
-    padding-top: 5px;
-}
