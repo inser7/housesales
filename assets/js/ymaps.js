@@ -4,9 +4,9 @@ var rovioMap;
 var nearObjects = [
     {
         "location": "Петрозаводск, ул. Ровио, 8",
-        "icon": 'twirl#blueStretchyIcon',
+        "icon": 'twirl#houseIcon',
         "label": "ул. Ровио, д. 8",
-        "hasIconText": true,
+        //"hasIconText": true,
     },
     {
         
@@ -14,6 +14,12 @@ var nearObjects = [
         "icon": 'twirl#trolleybusIcon',
         "isPreciseLocation": true,
         "label": "Остановка общественного транспорта (из города)"
+    },    
+    {        
+        "location": [61.764171,34.375153],
+        "icon": 'twirl#carIcon',
+        "isPreciseLocation": true,
+        "label": "Стоянка"
     },    
     {
         
@@ -25,12 +31,17 @@ var nearObjects = [
     {
         "location": "Петрозаводск, ул. Торнева, 2",
         "icon": 'twirl#shopIcon',
-        "label": "Магазин Ленторг"
+        "label": "Магазин «Ленторг»"
     },
     {
         "location": "Петрозаводск, ул. Парфенова, 5",
         "icon": 'twirl#shopIcon',
-        "label": "Магазин Магнит"
+        "label": "Магазин «Магнит»"
+    },
+    {
+        "location": "Петрозаводск, ул. Ровио, 11",
+        "icon": 'twirl#shopIcon',
+        "label": "ТЦ «Добрыня»"
     },
     {
         "location": "Петрозаводск, ул. Фролова, 13",
