@@ -26,6 +26,11 @@ h1, h2 {
 
 #pros-and-cons ul {
     list-style-type: none;
+    margin-left: 0;
+}
+
+#pros-and-cons ul li {
+    padding-bottom: 0.3em;
 }
 
 #plan{
@@ -129,6 +134,11 @@ address {
     #map {
         height: 234px;
     }    
+    
+    #intro {
+	padding-top: 0;
+    }
+
 }
      
 /* Landscape phone to portrait tablet */
@@ -144,5 +154,13 @@ address {
     .adv {
         box-shadow: none;
         border: none;
+    }
+    
+    h1 {
+	margin-top: 0;
+    }
+    
+    #intro {
+	padding-top: 0;
     }
 }
