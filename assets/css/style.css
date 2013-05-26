@@ -122,6 +122,10 @@ address {
     line-height: 1.5em;
 }
 
+#copyright {
+    opacity: 0.6;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
     #map {
