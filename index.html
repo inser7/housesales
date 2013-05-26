@@ -31,63 +31,63 @@
       }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
-      
-      <!-- Navigation -->
-      <!-- <div class="navbar" data-spy="affix"> -->
-      <!--   <div class="navbar-inner">  -->
-      <!--     <ul class="nav">  -->
-      <!--       <li><a href="#layout">Планировка</a></li>  -->
-      <!--       <li><a href="#situation">Расположение</a></li>  -->
-      <!--       <li><a href="#pros-and-cons">Преимущества и -->
-      <!--           недостатки</a></li>  -->
-      <!--       <li><a href="#contacts">Телефоны</a></li>  -->
-      <!--     </ul>  -->
-      <!--   </div>  -->
-      <!-- </div>  -->
-
       <div class="row">
         <div class="span12 adv">
-            <table id="sharing">
-              <tr>
-                <td class="vk">
-                  <!-- vk -->
-                  <script type="text/javascript">
-                    <!--
-                    document.write(VK.Share.button(false,{type: "round_nocount", text: "Сохранить"}));
-                    -->
-                  </script>
-                </td>
-                <td class="tw">
-                  <!-- Twitter -->
-                  <a href="https://twitter.com/share"
-                     class="twitter-share-button" data-count="none"
-                     data-lang="ru">Tweet</a>
-                </td>
-                <td class="gp">
-                  <!-- Google+ -->
-                  <div class="g-plus" data-action="share"
-                       data-annotation="none"></div>
-                  <script type="text/javascript">
-                    window.___gcfg = {lang: 'ru'};
-                    
-                    (function() {
-                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                    po.src = 'https://apis.google.com/js/plusone.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                    })();
-                  </script>
-                </td>
-              </tr>
-              <tr>
-                <td class="fb" colspan="3">
-                  <!-- facebook -->
-                  <div class="fb-like" data-href="http://rovio8-flat.info"
-                       data-send="false" data-width="200" data-show-faces="false"
-                       data-font="arial" data-action="recommend"></div>
-                </td>
+          <div class="row">
+            <div class="span9">
+              <!-- Navigation -->
+              <ul class="nav nav-pills"> 
+                <li><a href="#layout" class="muted">Планировка</a></li> 
+                <li><a href="#situation" class="muted">Расположение</a></li>
+                <li><a href="#pros-and-cons" class="muted">Преимущества и недостатки</a></li>
+                <li><a href="#contacts" class="muted">Телефоны</a></li>
+              </ul>
+            </div>
+            
+            <div class="span3">
+              <table id="sharing">
+                <tr>
+                  <td class="vk">
+                    <!-- vk -->
+                    <script type="text/javascript">
+                      <!--
+                      document.write(VK.Share.button(false,{type: "round_nocount", text: "Сохранить"}));
+                      -->
+                    </script>
+                  </td>
+                  <td class="tw">
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share"
+                       class="twitter-share-button" data-count="none"
+                       data-lang="ru">Tweet</a>
+                  </td>
+                  <td class="gp">
+                    <!-- Google+ -->
+                    <div class="g-plus" data-action="share"
+                         data-annotation="none"></div>
+                    <script type="text/javascript">
+                      window.___gcfg = {lang: 'ru'};
+                      
+                      (function() {
+                      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                      po.src = 'https://apis.google.com/js/plusone.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fb" colspan="3">
+                    <!-- facebook -->
+                    <div class="fb-like" data-href="http://rovio8-flat.info"
+                         data-send="false" data-width="200" data-show-faces="false"
+                         data-font="arial" data-action="recommend"></div>
+                  </td>
 
-              </tr>
-            </table>
+                </tr>
+              </table>
+            </div>
+          </div>
             
           <div class="row" id="intro">
             <div class="span10 offset1">
@@ -180,7 +180,7 @@
               <div class="row">
                 <div  class="span7">
                   <div id="plan">
-                    <img src="assets/img/plan.svg" width="100%"/>
+                    <img src="assets/img/plan.svg" width="100%" alt="План квартиры"/>
                   </div>
                 </div>
                 <div class="span2 offset1">
@@ -188,7 +188,7 @@
                   <ol id="roomsList">
                     <li>Балкон</li>
                     <li><a href="#bedroomView" data-toggle="modal">Спальня</a>&nbsp;&nbsp;<i class="icon-eye-open"></i></li>
-                    <li>Гостиная</li>
+                    <li><a href="#livingroomView" data-toggle="modal">Гостиная</a>&nbsp;&nbsp;<i class="icon-eye-open"></i></li>
                     <li>Кухня</li>
                     <li>Детская</li>
                     <li>Ванна</li>
@@ -197,24 +197,38 @@
                     <li>Кладовка</li>
                   </ol>
                 </div>
+
+                <!-- Bedroom modal -->
                 <div id="bedroomView" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3>Спальня</h3>
                   </div>
                   <div class="modal-body">
-
-                    <!-- fullsize="4096,2048" -->        
-                    <g:panoembed imageurl="https://lh3.googleusercontent.com/-zqhfYgiaa0Y/UaCGB6wvuaI/AAAAAAAABHI/RVbk9EngfYI/d/bedroom.jpg"
-                                 fullsize="5427,2848"
-                                 croppedsize="5427,1400"
-                                 offset="0,700"
-                                 displaysize="600,400"></g:panoembed>
-                    
+                    <img src="assets/img/bedroom/1.jpg" alt="Спальня1"/>
                   </div>
                   <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Зыкрыть</button>
                   </div>
                 </div>
+                
+                <!-- Living room modal -->
+                <div id="livingroomView" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                    data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3>Гостиная</h3>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/living/1.jpg" alt="Гостиная1"/>
+                    <img src="assets/img/living/2.jpg" alt="Гостиная2"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Зыкрыть</button>
+                  </div>
+                </div>
+
 
               </div>
             </div>
