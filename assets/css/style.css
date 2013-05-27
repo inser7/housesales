@@ -101,6 +101,7 @@ h1, h2 {
     vertical-align: middle;
     border-collapse: separate;
     border-spacing: 5px;
+    padding-bottom: 1em;
 }
 
 #vkshare0, #vkshare1 {
