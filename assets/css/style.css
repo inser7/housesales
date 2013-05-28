@@ -104,6 +104,10 @@ h1, h2 {
     padding-bottom: 1em;
 }
 
+.sharing .fb iframe.fb_ltr {
+    width: 103px;
+}
+
 #vkshare0, #vkshare1 {
     top: -2px;
 }
